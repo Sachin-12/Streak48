@@ -27,15 +27,15 @@ const App = () => {
           fallback={
             <View
               style={{
-                backgroundColor: Colors.lightMode.login_header_background,
+                backgroundColor: Colors.lightMode.login_background,
                 flex: 1,
               }}
-              />
-            }>
-            <AuthenticationNavigation theme={defaultTheme} />
-          </Suspense>
-        </PersistGate>
-      </Provider>
+            />
+          }>
+          <AuthenticationNavigation/>
+        </Suspense>
+      </PersistGate>
+    </Provider>
   );
 };
 
