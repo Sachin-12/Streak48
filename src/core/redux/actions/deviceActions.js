@@ -1,14 +1,14 @@
 export const deviceActions = {
-  setDeviceType: type => {
-    return dispatch => {
+  setDeviceType: (type) => {
+    return (dispatch) => {
       dispatch({
         type: deviceActionTypes.setDeviceType,
         deviceType: type,
       });
     };
   },
-  setDeviceSize: size => {
-    return dispatch => {
+  setDeviceSize: (size) => {
+    return (dispatch) => {
       dispatch({
         type: deviceActionTypes.setDeviceSize,
         size: size,
@@ -16,9 +16,9 @@ export const deviceActions = {
     };
   },
 
-  setDeviceOrientation: orientation => {
+  setDeviceOrientation: (orientation) => {
     if (orientation && orientation !== 'UNKNOWN') {
-      return dispatch => {
+      return (dispatch) => {
         dispatch({
           type: deviceActionTypes.setDeviceOrientation,
           orientation: orientation,
@@ -28,7 +28,7 @@ export const deviceActions = {
   },
 
   setDimensions: (width, height) => {
-    return dispatch => {
+    return (dispatch) => {
       dispatch({
         type: deviceActionTypes.setDimensions,
         dimensions: {width, height},

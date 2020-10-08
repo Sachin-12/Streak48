@@ -1,32 +1,30 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {connect} from 'react-redux';
-import LoginPage from '../../pages/authentication/login/LoginPage';
+import LoginPage from '../../pages/authentication/LoginPage';
 import {PageNames} from '../../../constants/PageNames';
-import mainNavigationHolder from './mainNavigationHolder/mainNavigationHolder';
+import {authenticationState} from '../../../redux/reducers/authReducer';
+import MainNavigationHolder from './mainNavigationHolder/mainNavigationHolder';
 
 const Stack = createStackNavigator();
 
-const AuthenticationNavigation = props => {
+const AuthenticationNavigation = (props) => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName={'Main'}>
-        {/*{{props.auth.loggedInState !== authenticationState.log_in_success ? (}*/}
-          <Stack.Screen
-            name={PageNames.Authentication}
-            component={LoginPage}
-            options={{animationTypeForReplace: 'pop', headerShown: false}}
-          />
-        {/*) : ({
+        {/* {props.auth.loggedInState !== authenticationState.log_in_success ? ( */}
+        <Stack.Screen name={PageNames.Authentication} component={LoginPage} />
+        {/* ) : (
           <>
             <Stack.Screen
               name={PageNames.Main}
-              component={mainNavigationHolder}
+              component={MainNavigationHolder}
               options={{headerShown: false}}
             />
           </>
-        )}*/}
+        )} */}
       </Stack.Navigator>
     </NavigationContainer>
   );
