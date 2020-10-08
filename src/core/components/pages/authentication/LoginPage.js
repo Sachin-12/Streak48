@@ -34,20 +34,20 @@ const Loginpage = (props) => {
       }
     }
   };
-  const signOut = async () => {
-    try {
-      await GoogleSignin.revokeAccess();
-      await GoogleSignin.signOut();
-      setUser(null); // Remember to remove the user from your app's state as well
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  // const signOut = () => {
-  //   auth()
-  //     .signOut()
-  //     .then(() => console.log('User signed out!'));
+  // const signOut = async () => {
+  //   try {
+  //     await GoogleSignin.revokeAccess();
+  //     await GoogleSignin.signOut();
+  //     setUser(null); // Remember to remove the user from your app's state as well
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
   // };
+  const signOut = async () => {
+    const user = await auth().signOut();
+    setUser(user);
+    console.log('User Signed out');
+  };
 
   return (
     <>
