@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "354222989462",
+    "firebase_url": "https://streak48-80452.firebaseio.com",
+    "project_id": "streak48-80452",
+    "storage_bucket": "streak48-80452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354222989462:android:3c60b00fbf787c901be2b7",
+        "android_client_info": {
+          "package_name": "com.streak48"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354222989462-vnssr2t99o30n5rfga88tg0vu9abu2ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.streak48",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "354222989462-sh9uod9dgnr603gdk9qohes9pbkfj8g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFUQqgDIz11FBDThZu6jDAxJLoCXYoJeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354222989462-sh9uod9dgnr603gdk9qohes9pbkfj8g3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
